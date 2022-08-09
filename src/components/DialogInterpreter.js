@@ -21,7 +21,7 @@ export default class DialogInterpreter {
     };
 
     const responses = await this.client.detectIntent(request);
-    (!result.intent) ? console.log('  No intent matched.') : null
+    
 
     return responses[0].queryResult.fulfillmentText.replace(/\\n/g, "\n");
   }
