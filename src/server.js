@@ -15,7 +15,7 @@ wppconnect
   .create({
     session: "sessionName", //Pass the name of the client you want to start the bot
     catchQR: (asciiQR) => {
-      console.log("Terminal qrcode: ", asciiQR);
+      // console.log("Terminal qrcode: ", asciiQR);
     },
     statusFind: (statusSession) => {
       console.log("Status Session: ", statusSession);
