@@ -4,7 +4,7 @@
   "license": "ISC",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "node src/server.js"
   },
   "dependencies": {
     "@google-cloud/dialogflow": "^5.4.0",
