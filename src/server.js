@@ -21,8 +21,10 @@ wppconnect
       console.log("Status Session: ", statusSession);
     },
     puppeteerOptions:{
+      args:['--no-sandbox','--disable-setuid-sandbox'],
       executablePath: executablePath()
-    }
+    },
+    
   })
   .then((client) => start(client))
   .catch((error) => console.log(error));
