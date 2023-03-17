@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const cors = require("cors");
+const { executablePath } = require('puppeteer');
 const port = 3000;
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -20,6 +20,9 @@ wppconnect
     statusFind: (statusSession) => {
       console.log("Status Session: ", statusSession);
     },
+    puppeteerOptions:{
+      executablePath: executablePath()
+    }
   })
   .then((client) => start(client))
   .catch((error) => console.log(error));
