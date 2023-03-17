@@ -8,6 +8,8 @@ services:
     image: wppconnect-server
     container_name: wppconnect-server
     hostname: wppconnect-server
+    ports:
+      - 21465:21465
     entrypoint: docker-entrypoint.sh yarn dev 
     networks:
       - wpp-network
