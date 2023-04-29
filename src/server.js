@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(cors({
-  origin:["http://localhost:5173","http://localhost:5173/"]
+  origin:["http://localhost:5173","http://localhost:5173/","*","https://chat-eight-omega.vercel.app/","https://chat-eight-omega.vercel.app"]
 }))
 
 require("./routes/df-routes")(app);
